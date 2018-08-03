@@ -4,9 +4,10 @@
 
   <%= f.fields_for :ingredients do |ingred| %>
     <%= ingred.label :name %>
-    <%= ingred.label :name %>
+    <%= ingred.text_field :name %>
+    
     <%= ingred.label :quantity %>
-    <%= ingred.label :quantity %>
+    <%= ingred.text_field :quantity %>
     <% end %>
 
   <%= f.submit %>
