@@ -13,4 +13,8 @@ class RecipesController < ApplicationController
 
   def create
   end
+
+  def recipe_params
+    params.require(:recipe).permit(:name, :quantity)
+  end   
 end
