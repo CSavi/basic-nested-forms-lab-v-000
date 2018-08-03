@@ -3,8 +3,10 @@
 
 
   <%= f.fields_for :ingredients do |ingred| %>
-    <%= ingred.label :ingredient_1 %>
-    <%= ingred.label :ingredient_2 %>
+    <%= ingred.label :name %>
+    <%= ingred.label :name %>
+    <%= ingred.label :quantity %>
+    <%= ingred.label :quantity %>
     <% end %>
 
   <%= f.submit %>
