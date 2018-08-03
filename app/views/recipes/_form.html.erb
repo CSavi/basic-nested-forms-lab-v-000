@@ -2,10 +2,10 @@
   Title: <%= f.text_field :title %>
 
 
-<%= f.fields_for :ingredients do |ingred| %>
-  <%= ingred.label :ingredient_1 %>
-  <%= ingred.label :ingredient_2 %>
-<% end %>
+  <%= f.fields_for :ingredients do |ingred| %>
+    <%= ingred.label :ingredient_1 %>
+    <%= ingred.label :ingredient_2 %>
+    <% end %>
 
- <%= f.submit %>
+  <%= f.submit %>
 <% end %>
